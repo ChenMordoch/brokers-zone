@@ -1,0 +1,39 @@
+Copy code
+/* Container for the dropdown to manage layout and spacing */
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  align-items: center; /* Center horizontally within the container */
+  direction: rtl; /* Ensure RTL direction */
+}
+
+/* Style for the label/question */
+.dropdown-label {
+  margin-bottom: 8px; /* Space between the label and dropdown */
+  font-size: 20px;
+  color: #333; /* Adjust color as needed */
+  font-weight: bold; /* Optional: makes the label bold */
+  text-align: right; /* Align text to the right for RTL */
+}
+
+/* Style for the select element */
+.dropdown {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+  text-align: right; /* Align text to the right for RTL */
+}
+
+.dropdown:hover {
+  background-color: #f0f0f0;
+}
+
+/* Option styling - note that many browsers do not allow styling for option tags */
+.dropdown option {
+  background-color: #fff;
+  color: #333;
+}

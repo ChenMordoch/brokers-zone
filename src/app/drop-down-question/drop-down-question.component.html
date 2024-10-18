@@ -1,0 +1,17 @@
+<div class="dropdown-container">
+    <label class="dropdown-label">{{question}}</label>
+    <div>
+        <select class="dropdown" #selectedOption (change)="onDropDownChange(selectedOption.value)">
+            <option value="" disabled selected>בחר/י באפשרות המתאימה עבורך</option>
+            @for (option of options; track option) {
+                <option value="{{option}}">{{option}}</option>
+                @if (selectedOption.value === "אחר, פרט") {
+                    <div>
+                        <input type="text"/>
+                    </div>
+                }
+            }
+        </select>
+    </div>
+</div>
+<!-- [formControl]="selectedOption"  -->

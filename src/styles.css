@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+/* Ensure the body and html take up the full height of the viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Center content horizontally and vertically using CSS Grid */
+  body {
+    display: grid;
+    place-items: center; /* Center content both horizontally and vertically */
+  }
